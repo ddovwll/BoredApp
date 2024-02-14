@@ -1,4 +1,2 @@
 * linguist-vendored
-*.llvm linguist-detectable=false
-*.cs linguist-detectable=true
-*.llvm linguist-language=cs
+*.llvm linguist-vendored=false
