@@ -1,0 +1,1 @@
+C:\Users\rober\RiderProjects\BoredApp\BoredApp.csproj;x64

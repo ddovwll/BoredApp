@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BoredApp.MainPage">
+    <ContentPage.Content>
+        <VerticalStackLayout
+            Spacing="25">
+            <Label x:Name="Activity"></Label>
+            <Entry x:Name="Type"></Entry>
+            <Label Text="Кол-во участников"></Label>
+            <Slider x:Name="Participants" Minimum="1" Maximum="5"></Slider>
+            <Label Text="Денежные затраты"></Label>
+            <Slider x:Name="Price" Minimum="0" Maximum="1" ></Slider>
+            <Label Text="Ссылка"></Label>
+            <Label x:Name="Link" ></Label>
+            <Label Text="Доступность"></Label>
+            <Slider x:Name="Accessibility" Minimum="0" Maximum="1"></Slider>
+            <ImageButton Source="like.png" WidthRequest="50" HeightRequest="50" BackgroundColor="Transparent"
+                         Clicked="ImageButton_OnClicked"></ImageButton>
+            <HorizontalStackLayout>
+            <Button
+                Text="Мне скучно"
+                HeightRequest="70"
+                WidthRequest="170"
+                Clicked="GenerateButton_OnClicked">
+            </Button>
+                <Button
+                    Text="Избранное"
+                    HeightRequest="70"
+                    WidthRequest="170"
+                    Clicked="FavoritesButton_OnClicked">
+                </Button>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>
